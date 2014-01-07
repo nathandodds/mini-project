@@ -1,5 +1,3 @@
-	    </div>
-	    <?php include "assets/includes/footer.php"; ?>
 	</div>
     <script>
     	var site_path = "<?php echo DIRECTORY; ?>"; 

@@ -17,7 +17,7 @@ class home extends C_Controller
         $this->addTag ( 'meta_keywords', 'Pegisis');
         $this->addTag ( 'meta_desc', 'Pegisis');
 
-        $this->addStyle('layout');
+        $this->addStyle('styles');
 
         $this->setView('home/index');
     }

@@ -5,6 +5,8 @@ STRUCTURE
 
 */
 
+@import "fonts/fonts";
+
 // Config settings and variables
 @import "config/settings";
 @import "config/variables";
@@ -18,12 +20,9 @@ STRUCTURE
 @import "mixins/retina";
 @import "mixins/sprite";
 
-// Elements
-@import "elements/error-msg";
-
 // Components
 @import "components/navigation";
-@import "components/footer";
+@import "components/header";
 
 // Framework
 @import "framework/grid";
@@ -43,27 +42,12 @@ body {
 .wrapper {
 	//margin: auto;
 	max-width: $wrapper-width;
-
-	@if ($MQs) == false {
-		min-width: $container-width; // when we are doing a desktop build need to include our min-width as 60em! This is the default that devices read, any bigger then will have to scroll
-	}
 }
 
 .container {
 	margin: auto;
-	//min-width: 60em; // when we are doing a desktop build need to include our min-width as 60em! This is the default that devices read, any bigger then will have to scroll
-	max-width: $container-width;
-	
-	@include bp(desktop) {
-		padding: $container-padding;
-	}
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-}
-
-h1 {
-	margin: 0;
-	padding-top: $container-padding;
 }

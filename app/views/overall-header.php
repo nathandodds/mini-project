@@ -9,8 +9,12 @@
         <meta name="keywords" content="<?php echo $meta_keywords; ?>">
         <meta name="description" content="<?php echo $meta_desc; ?>">
         <script src="<?php echo DIRECTORY; ?>assets/scripts/utils/modernizr.min.js"></script>
-        <?php if (MEDIA_QUERIES): ?>
+        <?php if( !!$is_mobile ) : ?>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <?php else: ?>
+            <meta name="viewport" content="width=1220">
+        <?php endif; ?>
+        <?php if (MEDIA_QUERIES): ?>
             <!--[if lte IE 8]>
             <link rel="stylesheet" href="<?php echo DIRECTORY; ?>assets/styles/nomq.css">
             <![endif]-->
@@ -31,4 +35,3 @@
         <div class="wrapper">
             <?php require "assets/includes/ie-notification.php"; flush(); ?>
             <?php include "assets/includes/navigation.php"; ?>
-            <div class="container content grid">

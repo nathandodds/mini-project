@@ -1,0 +1,1 @@
+<img src= "<?php echo DIRECTORY; ?>assets/images/larc-main-img.png" class="main-img"/>
