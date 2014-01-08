@@ -23,6 +23,10 @@ STRUCTURE
 // Components
 @import "components/navigation";
 @import "components/header";
+@import "components/content";
+@import "components/aside";
+
+
 
 // Framework
 @import "framework/grid";
@@ -32,11 +36,17 @@ STRUCTURE
 }
 
 body {
+	background: #F1F7F8;
 	font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} $base-font-family;
 	margin: 0;
+	max-width: 100%;
 
-	-webkit-text-size-adjust: none; // stops the text from becoming bigger on orientation on iPhone / iPad devices
-	  -webkit-font-smoothing: antialiased; // makes the font smooth on webkit devices
+	 -webkit-text-size-adjust: 100%; // stops the text from becoming bigger on orientation on iPhone / iPad devices
+	   -webkit-font-smoothing: antialiased; // makes the font smooth on webkit devices
+
+	@include bp(desktop) {
+		min-width: 1220px;
+	}
 }
 
 .wrapper {
@@ -51,3 +61,5 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
+
+

@@ -1,0 +1,138 @@
+.content {
+	margin-top: -3em;
+	padding: 0.75em 0.25em;
+	position: relative;
+	z-index: 1;
+
+	@include bp(desktop) {
+			width: 1137px;
+			margin: auto;
+		}
+}
+
+.main-text-top{
+	background: #31334F;
+	//margin-top: -3em;
+	//margin: -3em 1em 0em 1em;
+	padding: 0 0.5em 2em;
+	position: relative;
+	text-align: center;
+	@include border-radius(10px);
+	z-index: 1;
+
+	@include bp(desktop) {
+		margin: -6em;
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 1.125em;
+		font-family: 'merriweather-regular';
+		padding-top: 0.5em;
+	}
+
+	p {
+		color: #DC85A7;
+		font-size: 14px;
+		font-family: 'merriweather-light';
+	}
+
+	a {
+		bottom: -16px;
+		color: #371746;
+		background: #DC85A7;
+		display: block;
+		font-size: 15px;
+		font-family: 'merriweather-regular';
+		left: 50%;
+		margin-left: -143px;
+		padding: 0.75em 0;
+		position: absolute;
+		text-decoration: none;
+		@include border-radius(4px);
+		width: 285px;
+		z-index: 2;
+	}
+}
+.kwc-logo2{
+	background: url("../images/kwc-logo2.png") 0 0 no-repeat;
+	@include img-replace;
+	height: 65.531px;
+	width: 95.873px;
+}
+.kwc-text {
+	border: 7px solid #fff;
+	background: #31334F;
+	padding: 2em 1em 1em 1em;
+	margin: 5em 1em 1em 1em;
+
+	@include bp(desktop) {
+		p-top: 4.5em;
+	}
+
+	p {
+		color: #fff;
+		font-size: 15px;
+    	font-family: 'merriweather-light';
+	}
+
+	a {
+		color: #DC85A7;
+	}
+}
+
+.header2 {
+	text-align: center;
+	margin: 1em;
+		h2 {
+		color: #31334F;
+		font-size: 22px;
+		font-family: 'bpreplay-regular';
+
+		@include bp(desktop) { 
+			font-size: 34px;
+		}
+	}
+	p {
+		color: #4D4D4D;
+		font-size: 15px;
+		font-family: 'merriweather-regular';
+
+		@include bp(desktop) {
+			font-size: 24px;
+		}
+	}
+}
+
+.stories1,
+.stories2,
+.stories3,
+.stories4 {
+	border: 7px solid #fff;
+	margin: 1em;
+
+	@include bp(desktop) {
+		width: 792px;
+		float: left;
+	}
+
+	h3,
+	p {
+		margin-left: 0.5em;
+	}
+
+	h3 {
+		color: #333333;
+		font-family: 'bpreplay-regular';
+	}
+
+	.stories-text {
+		color: #DC85A7;
+		font-family: 'merriweather-light';
+	}
+
+	.stories-names {
+		color: #471F47;
+		font-family: 'merriweather-light';
+	}
+}

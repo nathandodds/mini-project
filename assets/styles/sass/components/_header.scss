@@ -1,5 +1,24 @@
-.main-img {
+.header {
 	background: #471F47;
-	display: block;
-	max-width: 100%;
+	border-bottom: 3px solid #DC85A7;
+
+	img {
+		display: block;
+		margin: auto;
+		max-width: 100%;
+	}
+
+	.header__mobile-img {
+		@include bp(desktop) {
+			display: none;
+		}
+	}
+
+	.header__desktop-img {
+		display: none;
+
+		@include bp(desktop) {
+			display: block;
+		}
+	}
 }

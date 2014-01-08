@@ -1,0 +1,51 @@
+.aside{
+	@include bp(desktop) {
+			float: right;
+			width: 300px;
+			vertical-align: top;
+		}
+}
+
+.aside__treatment {
+	background: #31334F;
+
+	h3 {
+		color: #fff;
+		font-family: 'merriweather-regular';
+		font-size: 20px;
+		margin-top: 2em;
+		text-align: center;
+
+	.treatment__text p {
+		color: #DC85A7;
+		font-family: 'merriweather-regular';
+		font-size: 15px;
+		text-align: center;
+		}
+		
+	a {
+		color: #DC85A7;
+		text-decoration: none;
+	}
+	}
+}
+
+.aside__myth{
+	background: #31334F;
+	h3 {
+		color: #DC85A7;
+		font-family: 'journal';
+		font-size: 45px;
+		margin-left: 0.5em;
+	}
+
+	p {
+		color: #fff;
+		margin: 0 0 1em 1em;
+	}
+
+	.aside__find a {
+		color: #DC85A7;
+		text-decoration: none;
+	}
+}

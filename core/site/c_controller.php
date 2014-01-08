@@ -60,6 +60,9 @@ class C_Controller
             //$this->addTag( 'dynamic_services', Menu::get_dynamic() );
         }
 
+        $md = new Mobile_detect();
+        $this->addTag( 'is_mobile', $md->isMobile() && !$md->isTablet() ? TRUE : FALSE );
+
         $this->setScript ( 'main' );
 
     }
