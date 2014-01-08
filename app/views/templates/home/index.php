@@ -11,7 +11,6 @@
 		<a href="">Take the test here to help you decide</a>
 	</article>
 	<article class="kwc-text">
-		<p class="kwc-logo2">kwc logo</p>
 		<p>You can find more sexual health information, as well as advice and guidance on a range of other health-related topics, by visiting the <a href="">KWC website.</a></p>
 	</article>
 	<section>
@@ -19,25 +18,37 @@
 		 	<h2>Real women, real stories</h2>
 		 	<p>Learn how other women found the right contraception for them</p>
 		</article>
-		<article class="stories1">
+		<article class="story">
 			<h3>Lorem ipsum dolor sit ame.</h3>
-			<p class="stories-text">Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
-			<p class="stories-names">Rebecca, 27</p>
+			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
+			<div class="story__person">
+				<p class="stories-names">Rebecca, 27</p>
+				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+			</div>
 		</article>
-		<article class="stories2">
+		<article class="story">
 			<h3>Lorem ipsum dolor sit ame.</h3>
-			<p class="stories-text">Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
-			<p class="stories-names">Rebecca, 27</p>
+			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
+			<div class="story__person">
+				<p class="stories-names">Rebecca, 27</p>
+				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+			</div>
 		</article>
-		<article class="stories3">
+		<article class="story">
 			<h3>Lorem ipsum dolor sit ame.</h3>
-			<p class="stories-text">Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
-			<p class="stories-names">Rebecca, 27</p>
+			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
+			<div class="story__person">
+				<p class="stories-names">Rebecca, 27</p>
+				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+			</div>
 		</article>
-		<article class="stories4">
+		<article class="story">
 			<h3>Lorem ipsum dolor sit ame.</h3>
-			<p class="stories-text">Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
-			<p class="stories-names">Rebecca, 27</p>
+			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
+			<div class="story__person">
+				<p class="stories-names">Rebecca, 27</p>
+				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+			</div>
 		</article>
 	</section>
 	<?php include "assets/includes/aside.php"; ?>

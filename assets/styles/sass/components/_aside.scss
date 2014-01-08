@@ -1,32 +1,41 @@
 .aside{
+	margin: 0 1em;
 	@include bp(desktop) {
+			margin: 0;
 			float: right;
-			width: 300px;
+			width: 25%;
 			vertical-align: top;
 		}
 }
 
 .aside__treatment {
 	background: #31334F;
+	padding: 1em 0;
 
 	h3 {
 		color: #fff;
 		font-family: 'merriweather-regular';
 		font-size: 20px;
 		margin-top: 2em;
+		padding-top: 1em;
 		text-align: center;
+	}
 
-	.treatment__text p {
+	.aside__treatment--text {
 		color: #DC85A7;
 		font-family: 'merriweather-regular';
 		font-size: 15px;
+		padding: 0 0.5em;
 		text-align: center;
-		}
+	}
 		
 	a {
 		color: #DC85A7;
-		text-decoration: none;
 	}
+
+	.treatment-img {
+		background: url("../images/treatment-img.png") 0 0 no-repeat;
+		@include img-replace;
 	}
 }
 
@@ -41,11 +50,30 @@
 
 	p {
 		color: #fff;
-		margin: 0 0 1em 1em;
+		margin: 0 1em 1em 1em;
 	}
 
 	.aside__find a {
 		color: #DC85A7;
-		text-decoration: none;
+	}
+
+	.question-img {
+		background: url("../images/larc-question-img.png") 0 0 no-repeat;
+		@include img-replace;
+	}
+
+	.answer-img {
+		background: url("../images/larc-answer-img.png") 0 0 no-repeat;
+		@include img-replace;
+	}
+
+	.question1 {
+		padding-bottom: 20px;
+		border-bottom:  2px dotted #fff;
+	}
+
+	.mythbuster-img {
+		background: url("../images/mythbuster-img.png") 0 0 no-repeat;
+		@include img-replace;
 	}
 }

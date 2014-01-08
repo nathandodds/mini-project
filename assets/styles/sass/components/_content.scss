@@ -56,18 +56,32 @@
 }
 .kwc-logo2{
 	background: url("../images/kwc-logo2.png") 0 0 no-repeat;
-	@include img-replace;
-	height: 65.531px;
-	width: 95.873px;
+	//@include img-replace;
+	height: 69px;
+	width: 100px;
 }
+
+
 .kwc-text {
 	border: 7px solid #fff;
 	background: #31334F;
 	padding: 2em 1em 1em 1em;
+	position: relative;
 	margin: 5em 1em 1em 1em;
 
 	@include bp(desktop) {
-		p-top: 4.5em;
+		padding-top: 4.5em;
+	}
+
+	&:before {
+		background: url("../images/kwc-logo2.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 69px;
+		left: -8px;
+		position: absolute;
+		top: -33px;
+		width: 100px;
 	}
 
 	p {
@@ -103,7 +117,7 @@
 		}
 	}
 }
-
+/*
 .stories1,
 .stories2,
 .stories3,
@@ -135,4 +149,68 @@
 		color: #471F47;
 		font-family: 'merriweather-light';
 	}
+
+	.story-img1 {
+		background: url("../images/story-img-1.png") 0 0 no-repeat;
+		@include img-replace;
+	}
+
+	.story-img2 {
+		background: url("../images/story-img-2.png") 0 0 no-repeat;
+		@include img-replace;
+	}
+
+	.story-img3 {
+		background: url("../images/story-img-3.png") 0 0 no-repeat;
+		@include img-replace;
+	}
+
+	.story-img4 {
+		background: url("../images/story-img-4.png") 0 0 no-repeat;
+		@include img-replace;
+	}
 }
+*/
+
+.story {
+	border: 7px solid #fff;
+	margin: 1em;
+
+	h3,
+	p {
+		margin-left: 0.5em;
+	}
+
+	h3 {
+		color: #333333;
+		font-family: 'bpreplay-regular';
+	}
+
+	p {
+		color: #DC85A7;
+		font-family: 'merriweather-light';
+	}
+
+	.story__person {
+		border: 1px dotted red;
+		line-height: 77px;
+		overflow: hidden;
+
+		p {
+			color: #471F47;
+			display: inline-block;
+			line-height: normal;
+			overflow: hidden;
+			vertical-align: middle;
+		}
+
+		.story__img {
+			display: block;
+			float: right;
+			height: 77px;
+			margin-right: 0.25em;
+			width: 77px;
+		}
+	}
+}
+
