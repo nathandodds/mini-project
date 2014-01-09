@@ -1,11 +1,13 @@
 .aside{
 	margin: 0 1em;
 	margin-top: 4em;
+
 	@include bp(desktop) {
-			margin: 0;
-			float: right;
-			width: 25%;
-			vertical-align: top;
+		display: block;
+		float: right;
+		margin-left: 2em;
+		width: 298px;
+		vertical-align: top;
 		}
 }
 
@@ -103,6 +105,6 @@
 	.find-out {
 		color: #DC85A7;
 		display: block;
-		margin: 0.5em 0;
+		margin: 0.5em 0em 1em 0;
 	}
 }

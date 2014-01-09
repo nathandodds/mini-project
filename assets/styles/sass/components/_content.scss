@@ -21,7 +21,12 @@
 	z-index: 1;
 
 	@include bp(desktop) {
-		margin: -6em;
+		margin: -6em 0 6em 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 920px;
+		height: 172px;
+
 	}
 
 	h1 {
@@ -29,12 +34,21 @@
 		font-size: 1.125em;
 		font-family: 'merriweather-regular';
 		padding-top: 0.5em;
+
+		@include bp(desktop) {
+			font-size: 34px;
+		}
 	}
 
 	p {
 		color: #DC85A7;
 		font-size: 14px;
 		font-family: 'merriweather-light';
+
+		@include bp(desktop) {
+			margin-top: -1em;
+			font-size: 24px;
+		}
 	}
 
 	a {
@@ -52,14 +66,37 @@
 		@include border-radius(4px);
 		width: 285px;
 		z-index: 2;
+
+		@include bp(desktop) {
+			bottom: -30px;
+			font-size: 21px;
+			width: 395px;
+
+
+			&:before {
+			content: ''; // needs to be blank
+			left: 46%; // left of our container (anchor tag)
+			margin-top: -11px; // half the height of the object being used - the triangle
+			position: absolute; // so we can position anywhere within our link
+			top: 7px; // vertically center
+
+			/* Triangle */
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 16px 12px 0 12px;
+			border-color: #31334f transparent transparent transparent;
+
+			}
+		}
 	}
 }
-.kwc-logo2{
+/*.kwc-logo2{
 	background: url("../images/kwc-logo2.png") 0 0 no-repeat;
 	//@include img-replace;
 	height: 69px;
 	width: 100px;
-}
+}*/
 
 
 .kwc-text {
@@ -70,24 +107,40 @@
 	margin: 5em 1em 1em 1em;
 
 	@include bp(desktop) {
-		padding-top: 4.5em;
+		height: 93px;
+
+		p{
+			margin: -1em 8em 0.5em 15em;
+
+		}
 	}
+
 
 	&:before {
 		background: url("../images/kwc-logo2.png") 0 0 no-repeat;
 		content: '';
 		display: block;
-		height: 69px;
+		height: 70px;
 		left: -8px;
 		position: absolute;
 		top: -33px;
 		width: 100px;
+
+		@include bp(desktop) {
+			background: url("../images/kwc-logo.png") 0 0 no-repeat;
+			display: block;
+			padding-right: 2em;
+			height: 101px;
+			width: 150px;
+			top: -0.75em;
+			left: 40px;
+		}
 	}
 
 	p {
 		color: #fff;
 		font-size: 15px;
-    	font-family: 'merriweather-light';
+    	font-family: 'merriweather-regular';
 	}
 
 	a {
@@ -105,6 +158,7 @@
 
 		@include bp(desktop) { 
 			font-size: 34px;
+			margin-bottom: -0.5em;
 		}
 	}
 	p {
@@ -122,6 +176,21 @@
 	border: 7px solid #fff;
 	margin: 1em;
 
+	@include bp(desktop) {
+			//width: 75%;
+			float: left;
+
+			.big-story {
+				height:297px;
+				width: 773px;
+			}
+
+			.small-story {
+				height: 312px;
+				width: 231px;
+			}
+		}
+
 	h3,
 	p {
 		margin-left: 0.5em;
@@ -130,11 +199,19 @@
 	h3 {
 		color: #333333;
 		font-family: 'bpreplay-regular';
+
+		@include bp(desktop) {
+			font-size: 26px;
+		}
 	}
 
 	p {
 		color: #DC85A7;
 		font-family: 'merriweather-light';
+
+		@include bp(desktop) {
+			font-size: 18px;
+		}
 	}
 
 	.story__person {
