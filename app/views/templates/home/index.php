@@ -20,12 +20,14 @@
 	<section class="section">
 		<div class="big-story">
 			<article class="story">
-				<h3>The implant:</h3>
-				<p>Having the implant allowed me to take control of my life, putting my career and social life first without having to worry about pregnancy.</p>
-				<div class="story__person">
-					<p class="stories-names">Rebecca, 27</p>
-					<span class="story__img--rebecca"><img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" /></span>
-					<span class="story__desktop-img"><img src="<?php echo DIRECTORY;?>assets/images/story-images-1-desktop.png" /></span>
+				<span class="story__desktop-img"><img src="<?php echo DIRECTORY;?>assets/images/story-images-1-desktop.png" /></span>
+				<div class="story__content">
+					<h3>The implant:</h3>
+					<p>Having the implant allowed me to take control of my life, putting my career and social life first without having to worry about pregnancy.</p>
+					<div class="story__person">
+						<p class="stories-names">Rebecca, 27</p>
+						<span class="story__img--rebecca"><img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" /></span>
+					</div>
 				</div>
 			</article>
 		</div>
@@ -61,4 +63,5 @@
 		</div>
 	</section>
 	<?php include "assets/includes/aside.php"; ?>
+	<?php include "assets/includes/footer.php"; ?>
 </div>

@@ -186,6 +186,11 @@
 	border: 7px solid #fff;
 	margin: 1em;
 
+	@include bp(desktop) {
+		height: 343px;
+		margin: 0;
+	}
+
 	h3,
 	p {
 		margin-left: 0.5em;
@@ -212,6 +217,7 @@
 	.story__person {
 		line-height: 78px;
 		overflow: hidden;
+		padding-bottom: 1em;
 
 		p {
 			color: #471F47;
@@ -228,35 +234,23 @@
 			height: 78px;
 			margin-right: 0.5em;
 			margin-bottom: 0.5em;
-			padding: 5px;
+			padding: 4px ;
 			width: 78px;
-
 			@include border-radius(50%);
-
 
 			img {
 				display: block;
 				height: 68px;
 				width: 68px;
 
+				@include bp(desktop) {
+					height: 72px;
+					width: 72px;
+				}
 			}
 		}
-	}
-}
 
-.story__desktop-img{
-	display: none;
-
-	@include bp(desktop) {
-		display: block;
-		float: left;
-		height: 274px;
-		width: 257px;
-	}
-
-}
-
-.story__img--rebecca {
+		.story__img--rebecca {
 			display: block;
 			float: right;
 			height: 78px;
@@ -265,11 +259,35 @@
 			padding: 5px;
 			width: 78px;
 
-	@include bp(desktop) {
-		display: none;
+			@include bp(desktop) {
+				display: none;
+			}
 		}
 	}
 
+	.story__desktop-img {
+		display: none;
+
+		@include bp(desktop) {
+			display: block;
+			
+			img {
+				display: block;
+				float: left;
+				height: 274px;
+				margin-top: 3.35em;
+				margin-left: 0.75em;
+				width: 257px;
+			}
+		}
+	}
+
+	.story__content {
+		@include bp(desktop) {
+			overflow: hidden;
+		}
+	}
+}
 
 .big-story,
 .small-story {
@@ -277,18 +295,6 @@
 		float: left;
 		margin: 0;
 		padding: 0.5em;
-	}
-
-	.story {
-		@include bp(desktop) {
-			margin: 0;
-			height:343px;
-
-			img {
-				height: 72px;
-				width: 72px;
-			}
-		}
 	}
 }
 
