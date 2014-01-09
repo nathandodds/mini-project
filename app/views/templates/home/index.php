@@ -23,7 +23,7 @@
 			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
 			<div class="story__person">
 				<p class="stories-names">Rebecca, 27</p>
-				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+				<span class="story__img"><img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" /></span>
 			</div>
 		</article>
 		<article class="story">
@@ -31,7 +31,7 @@
 			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
 			<div class="story__person">
 				<p class="stories-names">Rebecca, 27</p>
-				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+				<span class="story__img"><img src="<?php echo DIRECTORY;?>assets/images/story-img-2.png" /></span>
 			</div>
 		</article>
 		<article class="story">
@@ -39,7 +39,7 @@
 			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
 			<div class="story__person">
 				<p class="stories-names">Rebecca, 27</p>
-				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+				<span class="story__img"><img src="<?php echo DIRECTORY;?>assets/images/story-img-3.png" /></span>
 			</div>
 		</article>
 		<article class="story">
@@ -47,7 +47,7 @@
 			<p>Maecenas tincidunt iaculis hendrerit vestibulum mattis urna et leo faucibus blandit. Aenean tempor congue leo eget ornare.</p>
 			<div class="story__person">
 				<p class="stories-names">Rebecca, 27</p>
-				<img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" class="story__img" />
+				<span class="story__img"><img src="<?php echo DIRECTORY;?>assets/images/story-img-4.png" /></span>
 			</div>
 		</article>
 	</section>

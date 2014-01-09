@@ -1,5 +1,6 @@
 .aside{
 	margin: 0 1em;
+	margin-top: 4em;
 	@include bp(desktop) {
 			margin: 0;
 			float: right;
@@ -11,12 +12,13 @@
 .aside__treatment {
 	background: #31334F;
 	padding: 1em 0;
+	position: relative;
 
 	h3 {
 		color: #fff;
 		font-family: 'merriweather-regular';
 		font-size: 20px;
-		margin-top: 2em;
+		margin-top: 0.5em;
 		padding-top: 1em;
 		text-align: center;
 	}
@@ -33,38 +35,52 @@
 		color: #DC85A7;
 	}
 
-	.treatment-img {
+	&:before {
 		background: url("../images/treatment-img.png") 0 0 no-repeat;
-		@include img-replace;
+		content: '';
+		display: block;
+		height: 70px;
+		margin-top: -30px;
+		position: absolute;
+		top: 0%;
+		right: 37%;
+		width: 70px;
 	}
+
 }
 
 .aside__myth{
 	background: #31334F;
+	position: relative;
+
+	&:before {
+		background: url("../images/mythbuster-img.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 70px;
+		margin-top: -30px;
+		position: absolute;
+		top: 0%;
+		right: 37%;
+		width: 70px;
+	}
+
 	h3 {
 		color: #DC85A7;
 		font-family: 'journal';
 		font-size: 45px;
-		margin-left: 0.5em;
+		padding-top: 1em;
+		text-align: center;
 	}
 
 	p {
 		color: #fff;
 		margin: 0 1em 1em 1em;
+		overflow: hidden;
 	}
 
-	.aside__find a {
-		color: #DC85A7;
-	}
-
-	.question-img {
-		background: url("../images/larc-question-img.png") 0 0 no-repeat;
-		@include img-replace;
-	}
-
-	.answer-img {
-		background: url("../images/larc-answer-img.png") 0 0 no-repeat;
-		@include img-replace;
+	.myth-text {
+		margin-top: -2em;
 	}
 
 	.question1 {
@@ -72,8 +88,21 @@
 		border-bottom:  2px dotted #fff;
 	}
 
-	.mythbuster-img {
-		background: url("../images/mythbuster-img.png") 0 0 no-repeat;
-		@include img-replace;
+	.q-a {
+		color: #DC85A7;
+		display: block;
+		float: left;
+		margin-right: 0.5em;
+	}
+
+	.q-a-result {
+		display: block;
+		overflow: hidden;
+	}
+
+	.find-out {
+		color: #DC85A7;
+		display: block;
+		margin: 0.5em 0;
 	}
 }
