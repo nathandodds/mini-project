@@ -70,15 +70,17 @@
 		@include bp(desktop) {
 			bottom: -30px;
 			font-size: 21px;
+			margin-left: -198px;
 			width: 395px;
 
 
 			&:before {
 			content: ''; // needs to be blank
-			left: 46%; // left of our container (anchor tag)
-			margin-top: -11px; // half the height of the object being used - the triangle
+			left: 50%; // left of our container (anchor tag)
+			margin-left: -12px;
+			//margin-top: -11px; // half the height of the object being used - the triangle
 			position: absolute; // so we can position anywhere within our link
-			top: 7px; // vertically center
+			top: -4px; // vertically center
 
 			/* Triangle */
 			width: 0px;
@@ -172,24 +174,17 @@
 	}
 }
 
+.section {
+	@include bp(desktop) {
+		float: left;
+		width: 790px;
+	}
+	
+}
+
 .story {
 	border: 7px solid #fff;
 	margin: 1em;
-
-	@include bp(desktop) {
-			//width: 75%;
-			float: left;
-
-			.big-story {
-				height:297px;
-				width: 773px;
-			}
-
-			.small-story {
-				height: 312px;
-				width: 231px;
-			}
-		}
 
 	h3,
 	p {
@@ -238,12 +233,75 @@
 
 			@include border-radius(50%);
 
+
 			img {
 				display: block;
 				height: 68px;
 				width: 68px;
+
 			}
 		}
 	}
 }
 
+.story__desktop-img{
+	display: none;
+
+	@include bp(desktop) {
+		display: block;
+		float: left;
+		height: 274px;
+		width: 257px;
+	}
+
+}
+
+.story__img--rebecca {
+			display: block;
+			float: right;
+			height: 78px;
+			margin-right: 0.5em;
+			margin-bottom: 0.5em;
+			padding: 5px;
+			width: 78px;
+
+	@include bp(desktop) {
+		display: none;
+		}
+	}
+
+
+.big-story,
+.small-story {
+	@include bp(desktop) {
+		float: left;
+		margin: 0;
+		padding: 0.5em;
+	}
+
+	.story {
+		@include bp(desktop) {
+			margin: 0;
+			height:343px;
+
+			img {
+				height: 72px;
+				width: 72px;
+			}
+		}
+	}
+}
+
+.big-story,
+.small-story {
+	@include bp(desktop) {
+		width: 100%;
+	}
+}
+
+.small-story {
+	@include bp(desktop) {
+		margin: 0;
+		width: 33.33333%;
+	}
+}

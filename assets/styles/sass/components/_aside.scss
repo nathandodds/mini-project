@@ -5,10 +5,11 @@
 	@include bp(desktop) {
 		display: block;
 		float: right;
-		margin-left: 2em;
+		//margin-left: 2em;
+		margin-top: 0.4em;
 		width: 298px;
-		vertical-align: top;
-		}
+		//vertical-align: top;
+	}
 }
 
 .aside__treatment {
@@ -42,10 +43,10 @@
 		content: '';
 		display: block;
 		height: 70px;
-		margin-top: -30px;
+		left: 50%;
+		margin-left: -35px;
 		position: absolute;
-		top: 0%;
-		right: 37%;
+		top: -35px;
 		width: 70px;
 	}
 
@@ -94,6 +95,8 @@
 		color: #DC85A7;
 		display: block;
 		float: left;
+		font-family: 'merriweather-regular';
+		font-size: 20px;
 		margin-right: 0.5em;
 	}
 
@@ -104,7 +107,13 @@
 
 	.find-out {
 		color: #DC85A7;
+		font-family: 'merriweather-regular';
+		font-size: 15px;
 		display: block;
 		margin: 0.5em 0em 1em 0;
+
+		@include bp(desktop) {
+			font-size: 16px;
+		}
 	}
 }
