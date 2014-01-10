@@ -5,11 +5,9 @@
 	@include bp(desktop) {
 		display: block;
 		float: right;
-		//margin-left: 2em;
 		margin-top: 0.5em;
 		margin-left: 1em;
 		width: 298px;
-		//vertical-align: top;
 	}
 }
 
@@ -40,7 +38,7 @@
 	}
 
 	&:before {
-		background: url("../images/treatment-img.png") 0 0 no-repeat;
+		background: url("../images/mobile-treatment-img.png") 0 0 no-repeat;
 		content: '';
 		display: block;
 		height: 70px;
@@ -49,6 +47,24 @@
 		position: absolute;
 		top: -35px;
 		width: 70px;
+
+		@include retina {
+			background: url("../images/retina/mobile-treatment-img_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+
+		@include bp(desktop) {
+			background: url("../images/treatment-img.png") 0 0 no-repeat;
+			height: 86px;
+			margin-left: -42px;
+			top: -43px;
+			width: 83px;
+
+			@include retina {
+				background: url("../images/retina/treatment-img_2x.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+		}
 	}
 
 }
@@ -58,15 +74,33 @@
 	position: relative;
 
 	&:before {
-		background: url("../images/mythbuster-img.png") 0 0 no-repeat;
+		background: url("../images/mobile-mythbuster-img.png") 0 0 no-repeat;
 		content: '';
 		display: block;
 		height: 70px;
-		margin-top: -30px;
+		left: 50%;
+		margin-left: -35px;
 		position: absolute;
-		top: 0%;
-		right: 37%;
+		top: -35px;
 		width: 70px;
+
+		@include retina {
+			background: url("../images/retina/mobile-mythbuster-img_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+
+		@include bp(desktop) {
+			background: url("../images/mythbuster-img.png") 0 0 no-repeat;
+			height: 87px;
+			margin-left: -42px;
+			top: -44px;
+			width: 83px;
+
+			@include retina {
+				background: url("../images/retina/mythbuster-img_2x.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+		}
 	}
 
 	h3 {

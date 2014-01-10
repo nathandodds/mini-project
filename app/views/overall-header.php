@@ -12,7 +12,7 @@
         <?php if( !!$is_mobile ) : ?>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <?php else: ?>
-            <meta name="viewport" content="width=1220">
+            <meta name="viewport" content="width=1250">
         <?php endif; ?>
         <?php if (MEDIA_QUERIES): ?>
             <!--[if lte IE 8]>
