@@ -6,3 +6,4 @@
 09-01-2014 13:06:08 Core/Routing/Router: Threw exception: Could not find controller "assets" to load
 09-01-2014 13:06:10 Core/Routing/Router: Threw exception: Could not find controller "assets" to load
 09-01-2014 13:06:11 Core/Routing/Router: Threw exception: Could not find controller "assets" to load
+10-01-2014 10:08:48 Core/Routing/Router: Threw exception: Could not find controller "blank.gif" to load

@@ -33,8 +33,10 @@
 		</div>
 		<div class="small-story">
 			<article class="story">
+				<div class="story__smaller">
 				<h3>The injection:</h3>
 				<p>I’m starting to settle down now and so the contraceptive injection is great for me...</p>
+			</div>
 				<div class="story__person">
 					<p class="stories-names">Sarah, 31</p>
 					<span class="story__img"><img src="<?php echo DIRECTORY;?>assets/images/story-img-2.png" /></span>
@@ -63,5 +65,4 @@
 		</div>
 	</section>
 	<?php include "assets/includes/aside.php"; ?>
-	<?php include "assets/includes/footer.php"; ?>
 </div>

@@ -1,22 +1,153 @@
 .footer{
-	clear: both;
 	background: #371746;
-	text-align: center;
-	padding-top: 3em;
+	clear: both;
+	display: block;
+	margin: auto;
+	padding-bottom: 4em;
+	padding-top: 1em;
+	position: relative;
 
-	li {
-		color: #fff;
-		font-family: 'merriweather-light';
-		list-style: none;
+	@include bp(desktop) {
+		height: 81px;
+		padding-bottom: 0;
+		padding-top: 0;
+		margin-top: 5em;
 	}
 
-	p {
-		color: #fff;
-		font-family: 'merriweather-light';
-		font-size: 13px;
+	.footer__list {
+		letter-spacing: -0.32em;
+		margin: 0 auto;
+		max-width: 320px;
+		padding: 0;
+		text-align: center;
+
+		@include bp(desktop) {
+			//max-width: 1230px;
+			max-width: 1250px;
+			position: relative;
+			text-align: left;
+		}
+
+		.container {
+			@include bp(desktop) {
+				width: 1250px;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		li {
+			display: inline-block;
+			font-family: 'merriweather-light';
+			letter-spacing: normal;
+			list-style: none;
+			vertical-align: middle;
+		}
+
+		.footer__list--links {
+			border-right: 2px solid #DC85A7;
+			color: #fff;
+			display: inline-block;
+			font-size: 13px;
+			padding: 0.5em;
+			margin-bottom: 0.5em;
+			//margin-left: -1em;
+			//width: 50%;
+
+			@include bp(desktop) {
+				font-size: 12px;
+				margin-bottom: 0em;
+				line-height: 13px;
+			}
+		}
+
+		.no-border {
+			border: none;
+			
+				&:last-child {
+					border-right: 0em;
+				}
+
+			@include bp(desktop) {
+				border-right: 2px solid #DC85A7;
+			}
+		}
+
+		.footer__socials {
+			display: block;
+			margin: 1em 0.5em;
+
+			@include bp(desktop) {
+				display: inline-block;
+				margin: 1em;
+
+			}
+
+			a {
+				display: inline-block;
+				height: 38px;
+				width: 38px;
+				@include img-replace;
+			}
+
+			.footer__images--facebook {
+				background: url("../images/social-tag-facebook.png") 0 0 no-repeat;
+
+			}
+
+			.footer__images--twitter {
+				background: url("../images/social-tag-twitter.png") 0 0 no-repeat;
+			}
+		}
 	}
 }
 
+.footer__images--nhs {
+	bottom: 0;
+	border: none;
+	left: 0;
+	margin-bottom: 1em;
+	position: absolute;
+	padding: 0.5em 1em 0.5em 0.5em;
+
+	@include bp(desktop) {
+		margin: 0;
+		position: relative;
+		padding-right: 1em;
+
+	}
+
+	a {
+		background: url("../images/nhs-direct-logo.png") 0 0 no-repeat;
+		display: block;
+		height: 45px;
+		width: 60px;
+		@include img-replace;
+	}
+}
+
+.footer__images--sept {
+	bottom: 0;
+	right: 0;
+	margin-bottom: 1em;
+	position: absolute;
+	padding: 0.5em 0.5em 0.5em 1em;
+	//padding: 1em 0 1em 0;
+
+	@include bp(desktop) {
+		margin: 0;
+		position: relative;
+	}
+
+	a {
+			background: url("../images/sept-logo.png") 0 0 no-repeat;
+			display: block;
+			height: 29px;
+			width: 195px;
+			@include img-replace;
+		}
+}
+/*
 .footer__list--top {
 	li{
 		border-right: 2px solid #DC85A7;
@@ -54,4 +185,4 @@
 				border-right: none;
 		}
 	}
-}
+}*/

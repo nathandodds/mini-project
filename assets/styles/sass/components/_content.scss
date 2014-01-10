@@ -189,11 +189,16 @@
 	@include bp(desktop) {
 		height: 343px;
 		margin: 0;
+
+		p {
+			margin-bottom: -0.25em;
+		}
 	}
 
 	h3,
 	p {
 		margin-left: 0.5em;
+
 	}
 
 	h3 {
@@ -309,5 +314,6 @@
 	@include bp(desktop) {
 		margin: 0;
 		width: 33.33333%;
+		padding-bottom: 7em;
 	}
 }
