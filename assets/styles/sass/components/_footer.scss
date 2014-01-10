@@ -63,7 +63,7 @@
 
 		.no-border {
 			border: none;
-			
+
 				&:last-child {
 					border-right: 0em;
 				}
@@ -71,6 +71,10 @@
 			@include bp(desktop) {
 				border-right: 2px solid #DC85A7;
 			}
+		}
+
+		.desktop-no-border{
+			border: none;
 		}
 
 		.footer__socials {

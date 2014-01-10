@@ -8,7 +8,7 @@
 			<li class="footer__list--links">What women say</li>
 			<li class="footer__list--links no-border">Retrieve my results</li>
 			<li class="footer__list--links">Sitemap</li>
-			<li class="footer__list--links no-border ">Privacy</li>
+			<li class="footer__list--links desktop-no-border ">Privacy</li>
 			<li class="footer__socials">
 				<a href="" class="footer__images--facebook">facebook</a>
 				<a href="" class="footer__images--twitter">twitter</a>
