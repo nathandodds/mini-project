@@ -16,7 +16,7 @@
 				<a href="">What women say<span class="navigation__links--extra">Lorem ipsum dolor sit amet consectetur</span></a>
 			</li>
 			<li class="navigation__links--retrieve">
-				<a href="">Retrieve my results<span class="navigation__links--extra">Lorem ipsum dolor sit amet consectetur</span></a>
+				<a href="<?php echo DIRECTORY;?>results">Retrieve my results<span class="navigation__links--extra">Lorem ipsum dolor sit amet consectetur</span></a>
 			</li>
 			<li class="kwc-logo">
 				<a href="">kwc logo</a>

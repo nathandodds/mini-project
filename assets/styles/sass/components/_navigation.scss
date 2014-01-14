@@ -84,6 +84,8 @@
 			padding-left: 0.5em;
 			@include img-replace;
 
+			text-indent: 110%;
+
 		}
 	}
 
@@ -134,10 +136,6 @@
 				border-right: 1px solid #DC85A7;
 				display: inline-block;
 				padding: 0 6.15px 0 6.15px;
-
-				&:last-child {
-					border-right: none;
-				}
 			}
 
 			a {
@@ -146,6 +144,12 @@
 				@include bp(desktop) {
 					font-size: 0.75em;
 				}
+			}
+		}
+
+		.kwc-logo {
+			@include bp(desktop) {
+				border: none;
 			}
 		}
 
