@@ -77,6 +77,59 @@
 
 }
 
+
+
+.aside__whatnow {
+	margin: 3em auto;
+	background: #31334F;
+	position: relative;
+	@include bp(desktop) {
+		margin-bottom: 4.6em;
+	}
+
+	h3 {
+			color: #fff;
+			font-size: 21px;
+			font-family: 'merriweather-regular';
+			padding: 0.5em 0 0 0.25em;
+			text-align: center;
+		}
+	a {
+		color: #fff;
+		font-size: 18px;
+		font-family: 'merriweather-regular';
+		text-decoration: none;
+		text-align: center;
+	}
+
+}
+
+.aside__whatnow--text {
+		color: #DC85A7;
+		font-family: 'merriweather-regular';
+		font-size: 15px;
+		padding: 0 0.5em 0 2em;
+		margin-top: 0.5em;
+
+
+		&:before {
+		background: url("../images/whatnow-aside_r2_c1.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 70px;
+		left: 7%;
+		margin-left: -35px;
+		position: absolute;
+		top: -20px;
+		width: 70px;
+	}
+}
+
+.find-local {
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
 .aside__myth{
 	background: #31334F;
 	position: relative;

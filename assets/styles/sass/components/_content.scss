@@ -395,7 +395,40 @@
 		float: left;
 	}
 }
+/*.contra-inject{
+	@include retina {
+				background: url("../images/retina/contra-inject-mobilex2_r2_c1_r2_c1.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+}
 
+.implant{
+	@include retina {
+				background: url("../images/retina/implant-mobilex2_r2_c1.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+}
+
+.ius{
+	@include retina {
+				background: url("../images/retina/ius-mobilex2_r2_c1.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+}
+
+.iud{
+	@include retina {
+				background: url("../images/retina/iud-mobilex2_r2_c1.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+}
+
+.coc{
+	@include retina {
+				background: url("../images/retina/coc-mobilex2_r1_c3.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+}*/
 .aside__treatment--results {
 	background: #31334F;
 	padding: 1em 0;
