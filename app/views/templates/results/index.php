@@ -35,10 +35,19 @@
 			<a href="#"> Find out more</a>
 		</article>
 		<article class="results-article">
-			<img src="<?php echo DIRECTORY; ?>assets/images/coc-mobile_r2_c1.png" class="results-content__image"/>
-			<h2>Combined Pill (COC)</h2>
-			<p>The combined pill contains both oestrogen and progestogen and helps prevent pregnancy.</p>
-			<a href="#"> Find out more</a>
+			<div class="coc">
+				<img src="<?php echo DIRECTORY; ?>assets/images/coc-mobile_r2_c1.png" class="results-content__image"/>
+				<h2>Combined Pill (COC)</h2>
+				<p>The combined pill contains both oestrogen and progestogen and helps prevent pregnancy.</p>
+				<a href="#"> Find out more</a>
+			</div>
+		</article>
+		<div class="aside__treatment--results">
+			<h3>Where can I get treatment?</h3>
+			<p class="aside__treatment--text">You can receive further advice on contraception by visiting your GP or contacting your local CaSH service, details of these can be found on the <a href="">NHS Choices website.</a></p>
+		</div>
+		<article class="kwc-text">
+			<p>You can find more sexual health information, as well as advice and guidance on a range of other health-related topics, by visiting the <a href="">KWC website.</a></p>
 		</article>
 	</section>
 </div>
