@@ -5,7 +5,7 @@
 	@include bp(desktop) {
 		display: block;
 		float: right;
-		margin-top: 0.5em;
+		margin-top: 0.55em;
 		margin-left: 1em;
 		width: 298px;
 	}
@@ -15,6 +15,9 @@
 	background: #31334F;
 	padding: 1em 0;
 	position: relative;
+	@include bp(desktop) {
+		margin-bottom: 5em;
+	}
 
 	h3 {
 		color: #fff;
@@ -35,6 +38,10 @@
 		
 	a {
 		color: #DC85A7;
+		&:hover,
+		&:focus {
+			color: #C8ADD1;
+		}
 	}
 
 	&:before {
@@ -149,6 +156,10 @@
 
 		@include bp(desktop) {
 			font-size: 16px;
+			&:hover,
+			&:focus {
+			color: #C8ADD1;
+		}
 		}
 	}
 }

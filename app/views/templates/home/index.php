@@ -24,6 +24,7 @@
 				<div class="story__content">
 					<h3>The implant:</h3>
 					<p>Having the implant allowed me to take control of my life, putting my career and social life first without having to worry about pregnancy.</p>
+					<p class="desktop-only-text"> That’s not to say that I don’t want to get pregnant in the future, but only when I am good and ready. And that’s what is great about... </p>
 					<div class="story__person">
 						<p class="stories-names">Rebecca, 27</p>
 						<span class="story__img--rebecca"><img src="<?php echo DIRECTORY;?>assets/images/story-img-1.png" /></span>

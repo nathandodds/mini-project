@@ -12,8 +12,6 @@
 
 .main-text-top{
 	background: #31334F;
-	//margin-top: -3em;
-	//margin: -3em 1em 0em 1em;
 	padding: 0 0.5em 2em;
 	position: relative;
 	text-align: center;
@@ -36,7 +34,7 @@
 		padding-top: 0.5em;
 
 		@include bp(desktop) {
-			font-size: 34px;
+			font-size: 32px;
 		}
 	}
 
@@ -46,8 +44,10 @@
 		font-family: 'merriweather-light';
 
 		@include bp(desktop) {
+			margin: auto;
 			margin-top: -1em;
-			font-size: 24px;
+			font-size: 21px;
+			width: 569px;
 		}
 	}
 
@@ -66,6 +66,10 @@
 		@include border-radius(4px);
 		width: 285px;
 		z-index: 2;
+		&:hover,
+		&:focus {
+			background: #C8ADD1;
+		}
 
 		@include bp(desktop) {
 			bottom: -30px;
@@ -93,13 +97,6 @@
 		}
 	}
 }
-/*.kwc-logo2{
-	background: url("../images/kwc-logo2.png") 0 0 no-repeat;
-	//@include img-replace;
-	height: 69px;
-	width: 100px;
-}*/
-
 
 .kwc-text {
 	border: 7px solid #fff;
@@ -147,6 +144,10 @@
 
 	a {
 		color: #DC85A7;
+		&:hover,
+		&:focus {
+			color: #C8ADD1;
+		}
 	}
 }
 
@@ -159,7 +160,7 @@
 		font-family: 'bpreplay-regular';
 
 		@include bp(desktop) { 
-			font-size: 34px;
+			font-size: 32px;
 			margin-bottom: -0.5em;
 		}
 	}
@@ -169,7 +170,7 @@
 		font-family: 'merriweather-regular';
 
 		@include bp(desktop) {
-			font-size: 24px;
+			font-size: 22px;
 		}
 	}
 }
@@ -216,6 +217,16 @@
 
 		@include bp(desktop) {
 			font-size: 18px;
+		}
+	}
+
+	.desktop-only-text {
+		display: none;
+
+		@include bp(desktop) {
+			color: #333333;
+			display: block;
+			font-size: 14px;
 		}
 	}
 
@@ -303,8 +314,7 @@
 	}
 }
 
-.big-story,
-.small-story {
+.big-story {
 	@include bp(desktop) {
 		width: 100%;
 	}
@@ -312,8 +322,7 @@
 
 .small-story {
 	@include bp(desktop) {
-		margin: 0;
-		width: 33.33333%;
 		padding-bottom: 7em;
+		width: 33.33333%;
 	}
 }

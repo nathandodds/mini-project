@@ -43,6 +43,15 @@
 			vertical-align: middle;
 		}
 
+		a {
+			color: #fff;
+			text-decoration: none;
+			&:hover,
+			&:focus {
+			color: #C8ADD1;
+		}
+	}
+
 		.footer__list--links {
 			border-right: 2px solid #DC85A7;
 			color: #fff;
