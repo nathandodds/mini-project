@@ -12,7 +12,7 @@
 			<li>
 				<a href="">Understanding your contraception<span class="navigation__links--extra">Lorem ipsum dolor sit amet consectetur</span></a>
 			</li>
-			<li>
+			<li class="no-border-link">
 				<a href="">What women say<span class="navigation__links--extra">Lorem ipsum dolor sit amet consectetur</span></a>
 			</li>
 			<li class="navigation__links--retrieve">

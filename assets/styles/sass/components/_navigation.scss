@@ -102,10 +102,20 @@
 			display: inline-block;
 			margin: 0;
 			width: 75%;
+
+			.no-border-link {
+				border: none;
+			}
 		}
 
 		a {
 			text-decoration: none;
+		@include bp(desktop) {
+			&:hover,
+			&:focus {
+				color: #C8ADD1;
+				}
+			}
 		}
 
 		li {
@@ -154,6 +164,10 @@
 
 			@include bp(desktop) {
 				line-height: 80px;
+				&:hover,
+				&:focus {
+				background: #C8ADD1;
+				}
 			}
 
 			a,

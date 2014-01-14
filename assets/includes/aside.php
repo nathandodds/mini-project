@@ -1,6 +1,6 @@
 <aside class="aside">
 	<div class="aside__treatment">
-		<h3>Where can I get treatment</h3>
+		<h3>Where can I get treatment?</h3>
 		<p class="aside__treatment--text">You can receive further advice on contraception by visiting your GP or contacting your local CaSH service, details of these can be found on the <a href="">NHS Choices website.</a></p>
 	</div>
 	<div class="aside__myth">

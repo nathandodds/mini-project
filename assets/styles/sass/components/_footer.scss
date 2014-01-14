@@ -50,17 +50,15 @@
 			&:focus {
 			color: #C8ADD1;
 		}
-	}
+		}
 
 		.footer__list--links {
-			border-right: 2px solid #DC85A7;
+			border-right: 2px solid #C8ADD1;
 			color: #fff;
 			display: inline-block;
 			font-size: 13px;
 			padding: 0.5em;
 			margin-bottom: 0.5em;
-			//margin-left: -1em;
-			//width: 50%;
 
 			@include bp(desktop) {
 				font-size: 12px;
@@ -77,7 +75,7 @@
 				}
 
 			@include bp(desktop) {
-				border-right: 2px solid #DC85A7;
+				border-right: 2px solid #C8ADD1;
 			}
 		}
 

@@ -66,16 +66,16 @@
 		@include border-radius(4px);
 		width: 285px;
 		z-index: 2;
-		&:hover,
-		&:focus {
-			background: #C8ADD1;
-		}
 
 		@include bp(desktop) {
 			bottom: -30px;
 			font-size: 21px;
 			margin-left: -198px;
 			width: 395px;
+			&:hover,
+			&:focus {
+			background: #C8ADD1;
+		}
 
 
 			&:before {
@@ -110,6 +110,7 @@
 
 		p{
 			margin: -1em 8em 0.5em 15em;
+			font-size: 20px;
 
 		}
 	}
@@ -144,9 +145,11 @@
 
 	a {
 		color: #DC85A7;
-		&:hover,
-		&:focus {
-			color: #C8ADD1;
+		@include bp(desktop) {
+			&:hover,
+			&:focus {
+				color: #C8ADD1;
+			}
 		}
 	}
 }
@@ -205,6 +208,7 @@
 	h3 {
 		color: #333333;
 		font-family: 'bpreplay-regular';
+		margin-bottom: -0.6em;
 
 		@include bp(desktop) {
 			font-size: 26px;
@@ -216,6 +220,7 @@
 		font-family: 'merriweather-light';
 
 		@include bp(desktop) {
+			padding-top: 1em;
 			font-size: 18px;
 		}
 	}
@@ -300,6 +305,8 @@
 
 	.story__content {
 		@include bp(desktop) {
+			padding-left: 1em;
+			width: 480px;
 			overflow: hidden;
 		}
 	}
@@ -316,6 +323,7 @@
 
 .big-story {
 	@include bp(desktop) {
+		margin-bottom: 1.5em;
 		width: 100%;
 	}
 }
