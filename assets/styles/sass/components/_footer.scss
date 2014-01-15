@@ -1,3 +1,7 @@
+/***************************/
+/*********FOOTER************/
+/***************************/
+
 .footer{
 	background: #371746;
 	clear: both;
@@ -27,86 +31,88 @@
 			text-align: left;
 		}
 
-		.container {
-			@include bp(desktop) {
-				width: 1250px;
-				margin-bottom: 0;
-				padding-bottom: 0;
-			}
+	.container {
+		@include bp(desktop) {
+			width: 1250px;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	li {
+		display: inline-block;
+		font-family: 'merriweather-light';
+		letter-spacing: normal;
+		list-style: none;
+		vertical-align: middle;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+		color: #C8ADD1;
+		}
+	}
+
+	.footer__list--links {
+		border-right: 2px solid #C8ADD1;
+		color: #fff;
+		display: inline-block;
+		font-size: 13px;
+		padding: 0.5em;
+		margin-bottom: 0.5em;
+
+		@include bp(desktop) {
+			font-size: 12px;
+			margin-bottom: 0em;
+			line-height: 13px;
+		}
+	}
+
+	.no-border {
+		border: none;
+
+		&:last-child {
+			border-right: 0em;
 		}
 
-		li {
+		@include bp(desktop) {
+			border-right: 2px solid #C8ADD1;
+		}
+	}
+
+	.desktop-no-border{
+		border: none;
+	}
+
+	.footer__socials {
+		display: block;
+		margin: 1em 0.75em 2.5em 0.75em;
+
+		@include bp(desktop) {
 			display: inline-block;
-			font-family: 'merriweather-light';
-			letter-spacing: normal;
-			list-style: none;
-			vertical-align: middle;
+			margin: 1em;
+
 		}
 
 		a {
-			color: #fff;
-			text-decoration: none;
-			&:hover,
-			&:focus {
-			color: #C8ADD1;
-		}
-		}
-
-		.footer__list--links {
-			border-right: 2px solid #C8ADD1;
-			color: #fff;
 			display: inline-block;
-			font-size: 13px;
-			padding: 0.5em;
-			margin-bottom: 0.5em;
+			height: 38px;
+			width: 38px;
 
-			@include bp(desktop) {
-				font-size: 12px;
-				margin-bottom: 0em;
-				line-height: 13px;
-			}
+			@include img-replace;
 		}
 
-		.no-border {
-			border: none;
+		.footer__images--facebook {
+			background: url("../images/social-tag-facebook.png") 0 0 no-repeat;
 
-				&:last-child {
-					border-right: 0em;
-				}
-
-			@include bp(desktop) {
-				border-right: 2px solid #C8ADD1;
-			}
 		}
 
-		.desktop-no-border{
-			border: none;
-		}
-
-		.footer__socials {
-			display: block;
-			margin: 1em 0.75em 2.5em 0.75em;
-
-			@include bp(desktop) {
-				display: inline-block;
-				margin: 1em;
-
-			}
-
-			a {
-				display: inline-block;
-				height: 38px;
-				width: 38px;
-				@include img-replace;
-			}
-
-			.footer__images--facebook {
-				background: url("../images/social-tag-facebook.png") 0 0 no-repeat;
-
-			}
-
-			.footer__images--twitter {
-				background: url("../images/social-tag-twitter.png") 0 0 no-repeat;
+		.footer__images--twitter {
+			background: url("../images/social-tag-twitter.png") 0 0 no-repeat;
 			}
 		}
 	}
@@ -149,10 +155,11 @@
 	}
 
 	a {
-			background: url("../images/sept-logo.png") 0 0 no-repeat;
-			display: block;
-			height: 29px;
-			width: 195px;
-			@include img-replace;
-		}
+		background: url("../images/sept-logo.png") 0 0 no-repeat;
+		display: block;
+		height: 29px;
+		width: 195px;
+
+		@include img-replace;
+	}
 }

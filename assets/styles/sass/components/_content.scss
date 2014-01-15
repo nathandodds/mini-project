@@ -1,3 +1,7 @@
+/************************/
+/****HOMEPAGE-CONTENT****/
+/************************/
+
 .content {
 	margin-top: -3em;
 	padding: 0.75em 0.25em;
@@ -10,11 +14,16 @@
 	}
 }
 
+/*************************/
+/*****MAIN-HOMEPAGE*******/
+/*************************/
+
 .main-text-top{
 	background: #31334F;
 	padding: 0 0.5em 2em;
 	position: relative;
 	text-align: center;
+
 	@include border-radius(10px);
 	z-index: 1;
 
@@ -63,6 +72,7 @@
 		padding: 0.75em 0;
 		position: absolute;
 		text-decoration: none;
+
 		@include border-radius(4px);
 		width: 285px;
 		z-index: 2;
@@ -72,6 +82,7 @@
 			font-size: 21px;
 			margin-left: -198px;
 			width: 395px;
+
 			&:hover,
 			&:focus {
 			background: #C8ADD1;
@@ -97,6 +108,10 @@
 		}
 	}
 }
+
+/*****************************/
+/*****KWC-TEXT-HOMEPAGE*******/
+/*****************************/
 
 .kwc-text {
 	border: 7px solid #fff;
@@ -146,6 +161,7 @@
 	a {
 		color: #DC85A7;
 		@include bp(desktop) {
+
 			&:hover,
 			&:focus {
 				color: #C8ADD1;
@@ -157,6 +173,7 @@
 .header2 {
 	text-align: center;
 	margin: 1em;
+
 		h2 {
 		color: #31334F;
 		font-size: 22px;
@@ -178,7 +195,12 @@
 	}
 }
 
+/*******************************/
+/******HOMEPAGE CONTENT*********/
+/******************************/
+
 .section {
+
 	@include bp(desktop) {
 		float: left;
 		padding-bottom: 3em;
@@ -347,42 +369,62 @@
 	}
 }
 
-/*RESULTS PAGE CONTENT*/
+/****************************************/
+/*********RESULTS PAGE CONTENT***********/
+/*****************************************/
+
+.results-content {
+		@include bp(desktop) {
+			width: 789px;
+			float: left;
+		}
+	}
 
 .results-article {
 	border: 7px solid #fff;
-	//margin-top: 2em;
-	padding: 0.5em 0.5em;
+	padding: 0.5em 0em;
 	margin: 2em 1em;
+
 	@include bp(desktop) {
-		width:75%;
-		margin: auto;
+		margin-top: 2.5em;
+		margin-left: 0em;
+		margin-right: 0em;
+
 	}
 			
 	h2 {
 		color: #333333;
 		padding-left: 1em;
-		font-size: 18px;
+		font-size: 16px;
 		font-family: 'bpreplay-regular';
+
+		@include bp(desktop) {
+			font-size: 30px;
+		}
 	}
 
 	p {
 		color: #DC85A7;
 		padding-left: 1em;
-		font-size: 14px;
+		font-size: 12px;
 		font-family: 'merriweather-light';
+
+		@include bp(desktop) {
+			font-size: 21px;
+		}
 	}
 
 	a {
 		color: #333333;
 		text-decoration: none;
 		font-family: 'bpreplay-regular';
-		font-size: 14px;
-		padding-left: 8.8em;
+		font-size: 12px;
+		padding-left: 10em;
+		
 		@include bp(desktop) {
-			padding-left: -8.8em;
+			padding-left: -7em;
+			font-size: 18px;
 		}
-
 	}
 
 	h2,
@@ -392,51 +434,64 @@
 	}
 
 	img  {
+		display: block;
 		float: left;
+		height: 103px;
+		margin-top: -1.3em;
+		width: 109px;
 	}
 }
-/*.contra-inject{
-	@include retina {
-				background: url("../images/retina/contra-inject-mobilex2_r2_c1_r2_c1.png") 0 0 no-repeat;
-				background-size: 100%;
-			}
+
+.contra-inject img {
+	display: block;
+	height: 103px;
+	width: 109px;
 }
 
-.implant{
+.implant img{
 	@include retina {
-				background: url("../images/retina/implant-mobilex2_r2_c1.png") 0 0 no-repeat;
-				background-size: 100%;
-			}
+		background: url("../images/retina/implant-mobile_2x.png") 0 0 no-repeat;
+		height: 103px;
+		width: 109px;
+	}
 }
 
-.ius{
+.ius img{
 	@include retina {
-				background: url("../images/retina/ius-mobilex2_r2_c1.png") 0 0 no-repeat;
-				background-size: 100%;
-			}
+		background: url("../images/retina/ius-mobile_2x.png") 0 0 no-repeat;
+		height: 103px;
+		width: 109px;
+	}
 }
 
-.iud{
+.iud img{
 	@include retina {
-				background: url("../images/retina/iud-mobilex2_r2_c1.png") 0 0 no-repeat;
-				background-size: 100%;
-			}
+		background: url("../images/retina/iud-mobilex_2x.png") 0 0 no-repeat;
+		height: 103px;
+		width: 109px;
+	}
 }
 
-.coc{
+.coc img{
 	@include retina {
-				background: url("../images/retina/coc-mobilex2_r1_c3.png") 0 0 no-repeat;
-				background-size: 100%;
-			}
-}*/
+		background: url("../images/retina/coc-mobile_2x.png") 0 0 no-repeat;
+		height: 103px;
+		width: 109px;
+	}
+}
+
+/************************************/
+/*******TREATMENT-RESULTS-PAGE*******/
+/************************************/
+
 .aside__treatment--results {
 	background: #31334F;
 	padding: 1em 0;
 	position: relative;
 	margin: 4em 1em -2em 1em;
+	
 	@include bp(desktop) {
-		width:75%;
-		margin: 5em auto;
+		margin: 5em auto 1em;
 	}
 
 	h3 {
@@ -446,6 +501,10 @@
 		margin-top: 0.5em;
 		padding-top: 1em;
 		text-align: center;
+
+		@include bp(desktop) {
+			font-size: 26px;
+		}
 	}
 
 	.aside__treatment--text {
@@ -455,10 +514,15 @@
 		padding: 0 0.5em;
 		margin-top: 0.5em;
 		text-align: center;
-	}
+
+		@include bp(desktop) {
+			font-size: 18px;
+		}
+	}	
 		
 	a {
 		color: #DC85A7;
+
 		&:hover,
 		&:focus {
 			color: #C8ADD1;
@@ -495,4 +559,99 @@
 		}
 	}
 
+}
+
+/*********************************/
+/*****KWC TEXT - RESULTS PAGE*****/
+/*********************************/
+
+.kwc-text-results {
+	border: 7px solid #fff;
+	background: #31334F;
+	margin-top: 5em;
+	padding: 2em 0.5em 1em 0;
+	position: relative;
+
+	@include bp(desktop) {
+		margin: 0 0 1em;
+		padding: 1.25em;
+	}
+
+
+	&:before {
+		background: url("../images/kwc-logo-mobile.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 70px;
+		left: -8px;
+		position: absolute;
+		top: -33px;
+		width: 100px;
+
+		@include retina {
+			background: url("../images/retina/kwc-logo-mobile_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+
+		@include bp(desktop) {
+			background: url("../images/kwc-logo.png") 0 0 no-repeat;
+			display: block;
+			height: 106px;
+			width: 155px;
+			top: -0.75em;
+			left: 4px;
+
+			@include retina {
+				background: url("../images/retina/kwc-logo_2x.png") 0 0 no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+
+	p {
+		color: #fff;
+		font-size: 15px;
+    	font-family: 'merriweather-regular';
+
+    	@include bp(desktop) {
+    		margin: 0;
+    		padding-left: 156px;
+    	}
+	}
+
+	a {
+		color: #DC85A7;
+		@include bp(desktop) {
+			&:hover,
+			&:focus {
+				color: #C8ADD1;
+			}
+		}
+	}
+}
+
+/***************************************/
+/***********RESULTS LIST****************/
+/***************************************/
+
+.results__list {
+	counter-reset: li;
+	list-style: none;
+	padding: 0;
+
+	li {
+		position: relative;
+
+		&:before {
+			background: #31334F;
+			color: #DC85A7;
+			content: counter(li);
+      		counter-increment: li;
+      		font-size: 15.4px;
+      		left: 0;
+      		position: absolute;
+      		padding: 0.5em 0.75em;
+      		top: 0;
+		}
+	}
 }

@@ -1,4 +1,8 @@
-.aside{
+/**************************/
+/*****ASIDE-HOMEPAGE*******/
+/*************************/
+
+.aside {
 	margin: 0 1em;
 	margin-top: 4em;
 
@@ -10,6 +14,14 @@
 		width: 298px;
 	}
 }
+
+.results-aside {
+	margin-right: 0em;
+}
+
+/*******************************************/
+/******** Aside treatment homepage *********/
+/*******************************************/
 
 .aside__treatment {
 	background: #31334F;
@@ -39,6 +51,7 @@
 		
 	a {
 		color: #DC85A7;
+
 		&:hover,
 		&:focus {
 			color: #C8ADD1;
@@ -74,15 +87,18 @@
 			}
 		}
 	}
-
 }
 
-
+/**********************/
+/****WHAT NOW ASIDE****/
+/*********************/
 
 .aside__whatnow {
 	margin: 3em auto;
 	background: #31334F;
+	padding-bottom: 0.5em;
 	position: relative;
+
 	@include bp(desktop) {
 		margin-bottom: 4.6em;
 	}
@@ -94,6 +110,7 @@
 			padding: 0.5em 0 0 0.25em;
 			text-align: center;
 		}
+
 	a {
 		color: #fff;
 		font-size: 18px;
@@ -102,17 +119,45 @@
 		text-align: center;
 	}
 
+	&:before {
+		background: url("../images/exit-btn.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 24px;
+		right: 3%;
+		top: 2%;
+		position: absolute;
+		width: 24px;
+
+		@include retina {
+			background: url("../images/retina/exit-btn_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+
+.whatnow-border {
+	border-bottom: 4px solid #31334F;
+	margin: 0.75em 0;
+
+	@include bp(desktop) {
+		border-bottom: 4px solid #fff;
+	}
 }
 
 .aside__whatnow--text {
-		color: #DC85A7;
-		font-family: 'merriweather-regular';
-		font-size: 15px;
-		padding: 0 0.5em 0 2em;
-		margin-top: 0.5em;
+	color: #DC85A7;
+	font-family: 'merriweather-regular';
+	font-size: 13px;
+	padding: 0 0.5em 0 2em;
+	margin-top: 0.5em;
+
+	@include bp(desktop) {
+		font-size: 18px;
+	}
 
 
-		&:before {
+	&:before {
 		background: url("../images/whatnow-aside_r2_c1.png") 0 0 no-repeat;
 		content: '';
 		display: block;
@@ -122,13 +167,104 @@
 		position: absolute;
 		top: -20px;
 		width: 70px;
+		
+		@include retina {
+			background: url("../images/retina/whatnow_2x.png") 0 0 no-repeat;
+			background-size: 100%; 
+		}
+	}
+}
+
+/***************************************/
+/**Icons for the what to do now widget**/
+/***************************************/
+
+.save-results,
+.text-results,
+.email-results,
+.recommend-friend,
+.find-local {
+	padding-left: 70px;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 37px;
+		left: 16px;
+		margin-top: -19px;
+		position: absolute;
+		top: 50%;
+		width: 37px;
+	}
+
+	a {
+		font-size: 16px;
+
+		@include bp(desktop) {
+			font-size: 20px;
+		}
 	}
 }
 
 .find-local {
-	text-align: center;
-	padding-bottom: 0.5em;
+	&:before {
+		background: url("../images/find-local.png") 0 0 no-repeat;
+		
+		@include retina {
+			background: url("../images/retina/find-local_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+	}
 }
+
+.save-results {
+	&:before {
+		background: url("../images/save-result.png") 0 0 no-repeat;
+
+		@include retina {
+			background: url("../images/retina/save-result_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+
+.text-results {
+	&:before {
+		background: url("../images/text-results.png") 0 0 no-repeat;
+
+		@include retina {
+			background: url("../images/retina/text-results_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+
+.email-results {
+	&:before {
+		background: url("../images/email-results.png") 0 0 no-repeat;
+
+		@include retina {
+			background: url("../images/retina/email-results_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+
+.recommend-friend {
+	&:before {
+		background: url("../images/recommend-friend.png") 0 0 no-repeat;
+
+		@include retina {
+			background: url("../images/retina/recommend-friend_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+
+/***************************/
+/*****MYTHBUSTER ASIDE******/
+/***************************/
 
 .aside__myth{
 	background: #31334F;
@@ -215,5 +351,67 @@
 			color: #C8ADD1;
 		}
 		}
+	}
+}
+
+/*************************/
+/******REBECCA ASIDE******/
+/*************************/
+
+.aside__rebecca {
+	border: 7px solid #fff;
+
+	h3 {
+		color: #333333;
+		font-size: 25px;
+		font-family: 'bpreplay-regular';
+		padding-left: 0.75em;
+
+		@include bp(desktop) {
+			font-size: 30px;
+		}
+	}
+
+	p {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.rebecca-text-pink {
+		color: #DC85A7;
+		font-size: 16px;
+		font-family: 'merriweather-regular';
+
+		@include bp(desktop) {
+			font-size: 21px;
+		}
+	}
+
+	.rebecca-text-black {
+		color: #333;
+		font-size: 13px;
+		font-family: 'merriweather-regular';
+
+		@include bp(desktop) {
+			font-size: 17px;
+		}
+
+	}
+
+	.aside-name {
+		color: #471F47;
+		font-size: 19px;
+		font-family: 'merriweather-regular';
+		padding-top: 1em;
+
+		@include bp(desktop) {
+			font-size: 21px;
+		}
+	}
+
+	.aside__img--rebecca {
+		float: right;
+		margin-top: -5em;
+		margin-right:1em;
 	}
 }
