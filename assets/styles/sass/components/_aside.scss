@@ -15,9 +15,10 @@
 	}
 }
 
-.results-aside {
+.results {
 	margin-right: 0em;
 }
+
 
 /*******************************************/
 /******** Aside treatment homepage *********/
@@ -94,13 +95,13 @@
 /*********************/
 
 .aside__whatnow {
-	margin: 3em auto;
+	margin: 2em 0em;
 	background: #31334F;
 	padding-bottom: 0.5em;
 	position: relative;
 
 	@include bp(desktop) {
-		margin-bottom: 4.6em;
+		margin-bottom: 2em;
 	}
 
 	h3 {
@@ -310,6 +311,7 @@
 
 	p {
 		color: #fff;
+		font-size: 15px;
 		margin: 0 1em 1em 1em;
 		overflow: hidden;
 	}
@@ -340,7 +342,7 @@
 	.find-out {
 		color: #DC85A7;
 		font-family: 'merriweather-regular';
-		font-size: 16px;
+		font-size: 15px;
 		display: block;
 		margin: 0.5em 0em 1em 0;
 
@@ -366,9 +368,10 @@
 		font-size: 25px;
 		font-family: 'bpreplay-regular';
 		padding-left: 0.75em;
+		margin: 0.5em 0em;
 
 		@include bp(desktop) {
-			font-size: 30px;
+			font-size: 28px;
 		}
 	}
 
@@ -383,7 +386,7 @@
 		font-family: 'merriweather-regular';
 
 		@include bp(desktop) {
-			font-size: 21px;
+			font-size: 19px;
 		}
 	}
 
@@ -393,7 +396,7 @@
 		font-family: 'merriweather-regular';
 
 		@include bp(desktop) {
-			font-size: 17px;
+			font-size: 15px;
 		}
 
 	}
@@ -405,7 +408,9 @@
 		padding-top: 1em;
 
 		@include bp(desktop) {
-			font-size: 21px;
+			font-size: 19px;
+			padding-top: 4em;
+			padding-bottom: 1em;
 		}
 	}
 
@@ -413,5 +418,9 @@
 		float: right;
 		margin-top: -5em;
 		margin-right:1em;
+
+		@include bp(desktop) {
+			margin-top: -6em;
+		}
 	}
 }

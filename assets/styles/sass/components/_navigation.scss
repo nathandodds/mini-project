@@ -170,14 +170,21 @@
 				line-height: 80px;
 				&:hover,
 				&:focus {
-				background: #C8ADD1;
+					background: #C8ADD1;
+				}
+
+				a {
+					@include bp(desktop) {
+						display: block;
+					}
+
 				}
 			}
 
 			a,
 			.navigation__links--extra {
 				color: #31334F;
-			}	
+			}
 		}
 	}
 }

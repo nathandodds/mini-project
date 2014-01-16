@@ -369,6 +369,48 @@
 	}
 }
 
+/***************************************/
+/**********REVIEW MY ANSWERS************/
+/**************************************/
+
+.review-my-results {
+	display: none;
+
+	@include bp(desktop) {
+		display: block;
+		margin-top: -12px;
+
+		a {
+			text-decoration: none;
+		}
+
+		p {
+			color: #471F47;
+			background: #DC85A7;
+			font-size: 19px;
+			font-family: 'merriweather-regular';
+			padding: 0.5em 2em;
+			margin: 0em;
+		}
+
+		&:before {
+		background: url("../images/review-answers.png") 0 0 no-repeat;
+		content: '';
+		display: block;
+		height: 18px;
+		right: 2%;
+		top: 22%;
+		position: absolute;
+		width: 30px;
+
+		@include retina {
+			background: url("../images/retina/review-answers_2x.png") 0 0 no-repeat;
+			background-size: 100%;
+			}
+		}
+	}
+}
+
 /****************************************/
 /*********RESULTS PAGE CONTENT***********/
 /*****************************************/
@@ -382,7 +424,7 @@
 
 .results-article {
 	border: 7px solid #fff;
-	padding: 0.5em 0em;
+	padding: 0.5em 0em 1em 0em;
 	margin: 2em 1em;
 
 	@include bp(desktop) {
@@ -400,6 +442,8 @@
 
 		@include bp(desktop) {
 			font-size: 30px;
+			padding-left: 0.75em;
+			margin: 0.35em;
 		}
 	}
 
@@ -411,6 +455,7 @@
 
 		@include bp(desktop) {
 			font-size: 21px;
+			margin: 0.35em;
 		}
 	}
 
@@ -422,7 +467,7 @@
 		padding-left: 10em;
 		
 		@include bp(desktop) {
-			padding-left: -7em;
+			padding-left: 7.25em;
 			font-size: 18px;
 		}
 	}
@@ -437,7 +482,7 @@
 		display: block;
 		float: left;
 		height: 103px;
-		margin-top: -1.3em;
+		margin-top: -1.2em;
 		width: 109px;
 	}
 }
@@ -573,7 +618,7 @@
 	position: relative;
 
 	@include bp(desktop) {
-		margin: 0 0 1em;
+		margin: 3em 0em;
 		padding: 1.25em;
 	}
 
@@ -612,6 +657,7 @@
 		color: #fff;
 		font-size: 15px;
     	font-family: 'merriweather-regular';
+    	padding-left: 1em;
 
     	@include bp(desktop) {
     		margin: 0;

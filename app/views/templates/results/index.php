@@ -1,14 +1,26 @@
 <header class="header__results">
 	<img src="<?php echo DIRECTORY; ?>assets/images/results-header-mobile.png" class="results__header--mobile"/>
-	<img src="<?php echo DIRECTORY; ?>assets/images/results-header-desktop.png" class="results__header--desktop"/>
-	<h1 class="your-results">your results</h1>
-	<p class="results__header--text">Below are the contraceptive options best suited to you based on your answers. We’ve included all the details you need to make an informed choice.</p>
-	<ul class="results__header--buttons">
-		<li><a href="#">Start new search</a></li>
-		<li><a href="#">Review my answers</a></li>
-	</ul>
+		<h1 class="your-results-mobile">your results</h1>
+		<p class="your-results-mobile">Below are the contraceptive options best suited to you based on your answers. We’ve included all the details you need to make an informed choice.</p>
+		<ul class="results__header--buttons">
+			<li><a href="#">Start new search</a></li>
+			<li><a href="#">Review my answers</a></li>
+		</ul>
+</header>
+<header class="header__results--desktop">
+	<div class="container your-results-desktop">
+		<div class="your-results-desktop-text">
+			<h1 class="your-results-desktop">your results</h1>
+			<p class="your-results-desktop">Below are the contraceptive options best suited to you based on your answers. We’ve included all the details you need to make an informed choice.</p>
+			<a href="#" class="results-btn">Start new search</a>
+		</div>	
+		<img src="<?php echo DIRECTORY; ?>assets/images/results-header-desktop.png" class="results__header--desktop"/>
+	</div>
 </header>
 <div class="content">
+	<div class="review-my-results">
+		<p>Review my answers</p>
+	</div>
 	<div class="results-content">
 		<ol class="results__list">
 			<li class="results-article">
