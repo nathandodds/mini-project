@@ -18,22 +18,21 @@
 /*****MAIN-HOMEPAGE*******/
 /*************************/
 
-.main-text-top{
+.main-text-top {
 	background: #31334F;
 	padding: 0 0.5em 2em;
 	position: relative;
 	text-align: center;
-
-	@include border-radius(10px);
 	z-index: 1;
 
+	@include border-radius(10px);
+	
 	@include bp(desktop) {
+		height: 172px;
 		margin: -6em 0 6em 0;
 		margin-left: auto;
 		margin-right: auto;
 		width: 920px;
-		height: 172px;
-
 	}
 
 	h1 {
@@ -72,11 +71,11 @@
 		padding: 0.75em 0;
 		position: absolute;
 		text-decoration: none;
-
-		@include border-radius(4px);
 		width: 285px;
 		z-index: 2;
 
+		@include border-radius(4px);
+		
 		@include bp(desktop) {
 			bottom: -30px;
 			font-size: 21px;
@@ -85,25 +84,21 @@
 
 			&:hover,
 			&:focus {
-			background: #C8ADD1;
-		}
+				background: #C8ADD1;
+			}
 
 
 			&:before {
-			content: ''; // needs to be blank
-			left: 50%; // left of our container (anchor tag)
-			margin-left: -12px;
-			//margin-top: -11px; // half the height of the object being used - the triangle
-			position: absolute; // so we can position anywhere within our link
-			top: -4px; // vertically center
-
-			/* Triangle */
-			width: 0px;
-			height: 0px;
-			border-style: solid;
-			border-width: 16px 12px 0 12px;
-			border-color: #31334f transparent transparent transparent;
-
+				content: '';
+				left: 50%; 
+				margin-left: -12px;
+				position: absolute;
+				top: -4px;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 16px 12px 0 12px;
+				border-color: #31334f transparent transparent transparent;
 			}
 		}
 	}
@@ -123,13 +118,11 @@
 	@include bp(desktop) {
 		height: 93px;
 
-		p{
-			margin: -1em 8em 0.5em 15em;
+		p {
 			font-size: 20px;
-
+			margin: -1em 8em 0.5em 15em;
 		}
 	}
-
 
 	&:before {
 		background: url("../images/kwc-logo2.png") 0 0 no-repeat;
@@ -160,8 +153,8 @@
 
 	a {
 		color: #DC85A7;
-		@include bp(desktop) {
 
+		@include bp(desktop) {
 			&:hover,
 			&:focus {
 				color: #C8ADD1;
@@ -174,7 +167,7 @@
 	text-align: center;
 	margin: 1em;
 
-		h2 {
+	h2 {
 		color: #31334F;
 		font-size: 22px;
 		font-family: 'bpreplay-regular';
@@ -184,6 +177,7 @@
 			margin-bottom: -0.5em;
 		}
 	}
+
 	p {
 		color: #4D4D4D;
 		font-size: 15px;
@@ -200,13 +194,11 @@
 /******************************/
 
 .section {
-
 	@include bp(desktop) {
 		float: left;
 		padding-bottom: 3em;
 		width: 790px;
-	}
-	
+	}	
 }
 
 .story {
@@ -216,16 +208,15 @@
 	@include bp(desktop) {
 		height: 343px;
 		margin: 0;
+	}
 
-		p {
-			margin-bottom: -0.25em;
-		}
+	p {
+		margin-bottom: -0.25em;
 	}
 
 	h3,
 	p {
 		margin-left: 0.5em;
-
 	}
 
 	h3 {
@@ -293,19 +284,19 @@
 				}
 			}
 		}
+	}
 
-		.story__img--rebecca {
-			display: block;
-			float: right;
-			height: 78px;
-			margin-right: 0.5em;
-			margin-bottom: 0.5em;
-			padding: 5px;
-			width: 78px;
+	.story__img--rebecca {
+		display: block;
+		float: right;
+		height: 78px;
+		margin-right: 0.5em;
+		margin-bottom: 0.5em;
+		padding: 5px;
+		width: 78px;
 
-			@include bp(desktop) {
-				display: none;
-			}
+		@include bp(desktop) {
+			display: none;
 		}
 	}
 
@@ -390,18 +381,18 @@
 		}
 
 		&:before {
-		background: url("../images/review-answers.png") 0 0 no-repeat;
-		content: '';
-		display: block;
-		height: 18px;
-		right: 2%;
-		top: 10%;
-		position: absolute;
-		width: 30px;
+			background: url("../images/review-answers.png") 0 0 no-repeat;
+			content: '';
+			display: block;
+			height: 18px;
+			right: 2%;
+			top: 10%;
+			position: absolute;
+			width: 30px;
 
-		@include retina {
-			background: url("../images/retina/review-answers_2x.png") 0 0 no-repeat;
-			background-size: 100%;
+			@include retina {
+				background: url("../images/retina/review-answers_2x.png") 0 0 no-repeat;
+				background-size: 100%;
 			}
 		}
 	}
@@ -412,11 +403,11 @@
 /*****************************************/
 
 .results-content {
-		@include bp(desktop) {
-			width: 789px;
-			float: left;
-		}
+	@include bp(desktop) {
+		float: left;
+		width: 789px;
 	}
+}
 
 .results-article {
 	border: 7px solid #fff;
@@ -424,10 +415,11 @@
 	margin: 2em 1em;
 
 	@include bp(desktop) {
-		margin-top: 2.5em;
+		margin-top: 2em;
 		margin-left: 0em;
 		margin-right: 0em;
-
+		overflow: hidden;
+		padding-bottom: 0;
 	}
 			
 	h2 {
@@ -437,7 +429,7 @@
 		font-family: 'bpreplay-regular';
 
 		@include bp(desktop) {
-			font-size: 30px;
+			font-size: 26px;
 			padding-left: 0.75em;
 			margin: 0.35em;
 		}
@@ -450,8 +442,9 @@
 		font-family: 'merriweather-light';
 
 		@include bp(desktop) {
-			font-size: 21px;
+			font-size: 19px;
 			margin: 0.35em;
+			padding-bottom: 0.5em;
 		}
 	}
 
@@ -462,9 +455,9 @@
 		font-size: 12px;
 		padding-left: 10em;
 		
-		@include bp(desktop) {
-			padding-left: 7.25em;
+		@include bp(desktop) {			
 			font-size: 18px;
+			padding-left: 1em;
 		}
 	}
 
@@ -480,6 +473,12 @@
 		height: 103px;
 		margin-top: -1.2em;
 		width: 109px;
+	}
+
+	li {
+		@include bp (desktop) {
+			height: 200px;
+		}
 	}
 }
 
@@ -521,6 +520,22 @@
 	}
 }
 
+.mobile-img img {
+	display: block;
+	 @include bp(desktop) {
+	 	display: none;
+	 }
+}
+
+.desktop-img img {
+	display: none;
+	 @include bp(desktop) {
+	 	display: block;
+	 	height: 190px;
+	 	width: 202px;
+	 }
+}
+
 /************************************/
 /*******TREATMENT-RESULTS-PAGE*******/
 /************************************/
@@ -532,7 +547,7 @@
 	margin: 4em 1em -2em 1em;
 	
 	@include bp(desktop) {
-		margin: 5em auto 1em;
+		margin: 4.25em auto 1em;
 	}
 
 	h3 {
@@ -544,7 +559,8 @@
 		text-align: center;
 
 		@include bp(desktop) {
-			font-size: 26px;
+			font-size: 24px;
+			margin-bottom: 0em;
 		}
 	}
 
@@ -557,7 +573,7 @@
 		text-align: center;
 
 		@include bp(desktop) {
-			font-size: 18px;
+			font-size: 17px;
 		}
 	}	
 		
@@ -599,7 +615,36 @@
 			}
 		}
 	}
+}
 
+/***************************************/
+/***********RESULTS LIST****************/
+/***************************************/
+
+.results__list {
+	counter-reset: li;
+	list-style: none;
+	padding: 0;
+
+	li {
+		position: relative;
+
+		&:before {
+			background: #31334F;
+			color: #DC85A7;
+			content: counter(li);
+      		counter-increment: li;
+      		font-size: 15.4px;
+      		left: 0;
+      		position: absolute;
+      		padding: 0.5em 0.75em;
+      		top: 0;
+
+      		@include bp(desktop) {
+      			font-size: 22px;
+      		}
+		}
+	}
 }
 
 /*********************************/
@@ -609,12 +654,12 @@
 .kwc-text-results {
 	border: 7px solid #fff;
 	background: #31334F;
-	margin-top: 5em;
-	padding: 2em 0.5em 1em 0;
+	margin: 5em 0.5em;
+	padding: 2em 0.5em 1em 0.5em;
 	position: relative;
 
 	@include bp(desktop) {
-		margin: 3em 0em;
+		margin: 2em 0em;
 		padding: 1.25em;
 	}
 
@@ -663,37 +708,12 @@
 
 	a {
 		color: #DC85A7;
+
 		@include bp(desktop) {
 			&:hover,
 			&:focus {
 				color: #C8ADD1;
 			}
-		}
-	}
-}
-
-/***************************************/
-/***********RESULTS LIST****************/
-/***************************************/
-
-.results__list {
-	counter-reset: li;
-	list-style: none;
-	padding: 0;
-
-	li {
-		position: relative;
-
-		&:before {
-			background: #31334F;
-			color: #DC85A7;
-			content: counter(li);
-      		counter-increment: li;
-      		font-size: 15.4px;
-      		left: 0;
-      		position: absolute;
-      		padding: 0.5em 0.75em;
-      		top: 0;
 		}
 	}
 }

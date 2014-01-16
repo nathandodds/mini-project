@@ -97,15 +97,23 @@
 
 	@include bp(desktop) {
 		margin-bottom: 2em;
+		margin-top: 0em;
 	}
 
 	h3 {
 			color: #fff;
 			font-size: 21px;
 			font-family: 'merriweather-regular';
-			padding: 0.5em 0 0 0.25em;
+			padding: 0.75em 0 0 0.25em;
 			text-align: center;
+
+			@include bp(desktop) {
+			padding-top: 1.5em;
+			margin-bottom: 0em;
+			font-size: 23px;
+			font-family: 'merriweather-bold';
 		}
+	}
 
 	a {
 		color: #fff;
@@ -129,6 +137,10 @@
 			background: url("../images/retina/exit-btn_2x.png") 0 0 no-repeat;
 			background-size: 100%;
 		}
+
+		@include bp(desktop) {
+			display: none; 
+		}
 	}
 }
 
@@ -149,7 +161,7 @@
 	margin-top: 0.5em;
 
 	@include bp(desktop) {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 
@@ -163,6 +175,11 @@
 		position: absolute;
 		top: -20px;
 		width: 70px;
+
+		@include bp(desktop) {
+			left: 50%;
+			top: -40px;
+		}
 		
 		@include retina {
 			background: url("../images/retina/whatnow_2x.png") 0 0 no-repeat;
@@ -198,7 +215,8 @@
 		font-size: 16px;
 
 		@include bp(desktop) {
-			font-size: 20px;
+			font-size: 18px;
+			padding-top: 0.5em 0em;
 		}
 	}
 }
@@ -258,6 +276,25 @@
 	}
 }
 
+.recommend-friend-mobile p {
+	display: block;
+	@include bp(desktop) {
+		display: none;
+	}
+}
+
+.recommend-friend-desktop p {
+	display: none;
+	@include bp(desktop) {
+		color: #fff;
+		display: block;
+		font-size: 24px;
+		font-family: 'merriweather-regular';
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+}
 /***************************/
 /*****MYTHBUSTER ASIDE******/
 /***************************/

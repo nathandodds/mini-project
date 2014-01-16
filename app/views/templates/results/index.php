@@ -14,7 +14,7 @@
 			<p class="your-results-desktop">Below are the contraceptive options best suited to you based on your answers. We’ve included all the details you need to make an informed choice.</p>
 			<a href="#" class="results-btn">Start new search</a>
 		</div>	
-		<img src="<?php echo DIRECTORY; ?>assets/images/results-header-desktop.png" class="results__header--desktop"/>
+		<img src="<?php echo DIRECTORY; ?>assets/images/results-header-desktop.png" class="results__header--desktop" />
 	</div>
 </header>
 <div class="content">
@@ -25,7 +25,8 @@
 		<ol class="results__list">
 			<li class="results-article">
 				<div class="contra-inject">
-					<img src="<?php echo DIRECTORY; ?>assets/images/retina/contra-inject-mobile_2x.png" class="results-content__image"/>
+					<span class="mobile-img"><img src="<?php echo DIRECTORY; ?>assets/images/retina/contra-inject-mobile_2x.png" class="results-content__image"/></span>
+					<span class="desktop-img"><img src="<?php echo DIRECTORY; ?>assets/images/contra-inject-desktop.png" class="results-content__image-desktop"/></span>
 					<h2>Contraceptive Injection</h2>
 					<p>Containing the hormone progestogen, the contraceptive injection lasts for either 8 or 12 weeks.</p>
 					<a href="#"> Find out more</a>
@@ -33,7 +34,8 @@
 			</li>
 			<li class="results-article">
 				<div class="implant">
-					<img src="<?php echo DIRECTORY; ?>assets/images/implants-mobile.png" class="results-content__image-mobile"/>
+					<span class="mobile-img"><img src="<?php echo DIRECTORY; ?>assets/images/implants-mobile.png" class="results-content__image-mobile" class="mobile-img"/></span>
+					<span class="desktop-img"><img src="<?php echo DIRECTORY; ?>assets/images/implant-desktop.png" class="results-content__image-desktop"/></span>
 					<h2>Implants</h2>
 					<p>A flexible tube full of progestogen, an implant can be effective for three years.</p>
 					<a href="#"> Find out more</a>
@@ -41,7 +43,8 @@
 			</li>
 			<li class="results-article">
 				<div class="ius">
-					<img src="<?php echo DIRECTORY; ?>assets/images/ius-mobile.png" class="results-content__image-mobile"/>
+					<span class="mobile-img"><img src="<?php echo DIRECTORY; ?>assets/images/ius-mobile.png" class="results-content__image-mobile" class="mobile-img"/></span>
+					<span class="desktop-img"><img src="<?php echo DIRECTORY; ?>assets/images/ius-desktop.png" class="results-content__image-desktop"/></span>
 					<h2>Intrauterine System (IUS)</h2>
 					<p>Working for up to five years, an IUS releases the hormone progestogen to help prevent pregnancy.</p>
 					<a href="#"> Find out more</a>
@@ -49,7 +52,8 @@
 			</li>
 			<li class="results-article">
 				<div class="iud">
-					<img src="<?php echo DIRECTORY; ?>assets/images/iud-mobile.png" class="results-content__image-mobile"/>
+					<span class="mobile-img"><img src="<?php echo DIRECTORY; ?>assets/images/iud-mobile.png" class="results-content__image-mobile" class="mobile-img"/></span>
+					<span class="desktop-img"><img src="<?php echo DIRECTORY; ?>assets/images/iud-desktop.png" class="results-content__image-desktop"/></span>
 					<h2>Intrauterine Device (IUD)</h2>
 					<p>Long-lasting but reversible, IUDs are fitted by a trained doctor or nurse.</p>
 					<a href="#"> Find out more</a>
@@ -57,7 +61,8 @@
 			</li>
 			<li class="results-article">
 				<div class="coc">
-					<img src="<?php echo DIRECTORY; ?>assets/images/coc-mobile.png" class="results-content__image-mobile"/>
+					<span class="mobile-img"><img src="<?php echo DIRECTORY; ?>assets/images/coc-mobile.png" class="results-content__image-mobile" class="mobile-img"/></span>
+					<span class="desktop-img"><img src="<?php echo DIRECTORY; ?>assets/images/coc-desktop.png" class="results-content__image-desktop"/></span>
 					<h2>Combined Pill (COC)</h2>
 					<p>The combined pill contains both oestrogen and progestogen and helps prevent pregnancy.</p>
 					<a href="#"> Find out more</a>

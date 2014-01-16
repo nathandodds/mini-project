@@ -24,7 +24,9 @@
 	}
 }
 
+/****************************/
 /*RESULTS PAGE HEADER-MOBILE*/
+/*****************************/
 
 .header__results {
 	text-align: center;
@@ -34,6 +36,7 @@
 	.results__header--buttons {
 		text-align: center;
 		margin-left: -2.55em;
+
 		li {
 			background: #DC85A7;		
 			display: inline;
@@ -42,6 +45,7 @@
 			font-family: 'merriweather-light';
 			padding: 0.5em;
 			margin-left: 0.5em;
+			
 			@include border-radius(0.375em);
 
 			a {
@@ -139,19 +143,15 @@
 		}
 
 		img {
-			//float: right;
 			display: inline-block;
 			margin-top: -4px;
 			vertical-align: middle;
-			//margin-top: -16em;
-			//margin-left: 45em;
 		}
 	}
 }
 
 .your-results-desktop-text {
 	@include bp(desktop) {
-		//float: left;
 		display: inline-block;
 		letter-spacing: normal;
 		line-height: normal;

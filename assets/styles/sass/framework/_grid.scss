@@ -20,7 +20,8 @@ If you need to change the way a sector is styled then add a class and style that
 	}
 
 	// Every class that has grid__ at the start we want to apply these styles to them
-	[class*='grid__'] {
+	[class*='grid__'],
+	.grid__full {
 		display: block;
 		list-style: none;
 		padding: ($grid-margin / 2) $grid-margin;

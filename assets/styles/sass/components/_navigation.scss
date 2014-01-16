@@ -1,3 +1,7 @@
+/**************************/
+/*******NAVIGATION*********/
+/**************************/
+
 .navigation {
 	background: #371746;
 	font-family: 'merriweather-regular';
@@ -24,6 +28,10 @@
 	p {
 		display: inline-block;
 	}
+
+/**********************/
+/********LOGO*********/
+/*********************/
 
 	.navigation__logo,
 	.navigation__mobile-icon {
@@ -54,6 +62,9 @@
 			@include img-replace;
 		}
 	}
+/***********************/
+/****MOBILE-DROPDOWN****/
+/**********************/
 
 	.navigation__mobile-icon {
 		padding: 0 0.5em 0 0;
@@ -73,6 +84,10 @@
 		}
 	}
 
+/****************/
+   /*KWC LOGO*/
+/******************/
+
 	.kwc-logo {
 		display: none;
 
@@ -89,7 +104,10 @@
 		}
 	}
 
+/*******************/
 	/* UL */
+/*******************/
+
 	.navigation__links {
 		background: #31334F;
 		border-top: 2px solid #DC85A7;
@@ -162,6 +180,10 @@
 				display: none;
 			}
 		}
+
+		/*********************/
+		/**RETRIEVE RESULTS**/
+		/********************/
 
 		.navigation__links--retrieve {
 			background: #DC85A7;
