@@ -7,7 +7,7 @@
 
 .grid-container {
 	@include bp(desktop) {
-		margin: auto;         /*<---- CONTAINER HOLDING THE ENTIRE WEBPAGE CONTENT*/
+		margin: auto;         /*<-- CONTAINER HOLDING THE ENTIRE WEBPAGE CONTENT*/
 		width: 64em;
 	}
 
@@ -50,7 +50,7 @@
 	}
 }
 
-.contraception {
+.contraception {  /****WHERE CAN I GET CONTRACEPTION****/
 	border: none;
 	background: #31334F;
 	text-align: center;
@@ -83,7 +83,7 @@
 		top: -35px;
 		width: 70px;
 
-		@include sprite(0 -61px);
+		@include sprite(0 -61px); /***USING SPRITES INSTEAD OF IMAGE REPLACEMENT REDUCES THE AMOUNT OF IMAGE FILES***/
 
 		@include bp(desktop) {
 			height: 86px;
@@ -155,7 +155,7 @@
 }
 
 
-.wtdn {
+.wtdn { /***WHAT TOO DO NOW***/
 	background: #31334F;
 	border: 7px solid #fff;
 
@@ -201,7 +201,7 @@
 	}
 }
 
-.sarah {
+.sarah { /***SARAH TALKING ABOUT HER CONTRECEPTION***/
 	border: 7px solid #fff;
 	text-align: left;
 	padding: 0em 1em;
@@ -232,7 +232,7 @@
 	}
 }
 
-.aside__myth--grid {
+.aside__myth--grid { /***MYTHBUSTER***/
 	background: #31334F;
 	position: relative;
 
