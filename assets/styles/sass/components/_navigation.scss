@@ -55,11 +55,19 @@
 		}
 
 		a {
-			background: url("../images/larc-logo.png") 0 0 no-repeat;
 			display: block;
 			height: 26px;
 			width: 261px;
 			@include img-replace;
+
+			@include sprite (0 0);
+
+			@include bp(desktop) {
+				height: 32px;
+				width: 323px;
+
+				@include sprite (0 -27px);
+			}
 		}
 	}
 /***********************/

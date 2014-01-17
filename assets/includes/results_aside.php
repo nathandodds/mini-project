@@ -12,7 +12,7 @@
 		<p class="text-results"><a href="#"> Text me my results </a></p>
 		<p class="email-results" "whatnow-border"><a href="#"> Email me my results </a></p>
 	</div>
-	<span class="recommend-friend-desktop"><p>Tell a friend</p></span>
+		<span class="recommend-friend-desktop"><p>Tell a friend</p></span>
 		<span class="recommend-friend-mobile"><p class="aside__whatnow--text">Tell a friend about Contraception Advisor</p></span>
 		<p class="recommend-friend"><a href="#">Recommend a friend </a></p>
 	</div>
@@ -30,7 +30,7 @@
 		<div class="myth-text">
 			<p class="question1"><span class="q-a">Q</span><span class="q-a-result">The coil falls out during sex.</span></p>
 			<p><span class="q-a">A</span><span class="q-a-result">Having sex doesn’t cause the coil to fall out. But if you are experiencing any unusual pain that you think is related to your coil, contact your GP or Contraception and Sexual Health Service as soon as possible. <a href="" class="find-out">Find out about the coil here</a></span></p>
-			</div>
 		</div>
+	</div>
 	</div>
 </aside>

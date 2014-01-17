@@ -166,7 +166,6 @@
 
 
 	&:before {
-		background: url("../images/whatnow-aside_r2_c1.png") 0 0 no-repeat;
 		content: '';
 		display: block;
 		height: 70px;
@@ -176,15 +175,16 @@
 		top: -20px;
 		width: 70px;
 
+		@include sprite (0 -259px);
+
 		@include bp(desktop) {
-			left: 50%;
-			top: -40px;
-		}
+			@include sprite (-232px -226px);
+			left: 47%;
+			top: -50px;
+			width: 164px;
+			height: 164px;
+		}		
 		
-		@include retina {
-			background: url("../images/retina/whatnow_2x.png") 0 0 no-repeat;
-			background-size: 100%; 
-		}
 	}
 }
 
